@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>
+            javascript array
+        </h1>
+        <h2>
+            looping in array
+        </h2>
+        <p id="demo"></p>
+        <script>
+            const fruit=["banana", "orange","apple","peaches"];
+            let arraylength=fruit.length;
+            let text="<ul>";
+                for(let i=0;i<arraylength;i++){
+                    text +="<li>" + fruit[i] + "<li>";
+                    }
+                    text+="</ul>";
+                        document.getElementById("demo").innerHTML=text;
+
+        </script>
+    </body>
+</html>

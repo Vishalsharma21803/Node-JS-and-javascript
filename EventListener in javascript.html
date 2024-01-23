@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            alert box!
+        </title>
+    </head>
+    <body>
+        <h2>
+            javascript and event listener
+        </h2>
+        <p> this the example of using addEventListener() method to add events on the same button</p>
+
+        <button id="mybtn"> Try it</button>
+        <p id="demo"></p>
+        <script type="text/javascript">
+                var x= document.getElementById("mybtn");
+                x.addEventListener("mouseover", myfunction);
+                x.addEventListener("click", mysecondfunction);
+                x.addEventListener("mouseout", mythirdfunction);
+                function myfunction(){
+                    document.getElementById("demo").innerHTML += "mouseover! <br>";
+                }
+                function mysecondfunction(){
+                    document.getElementById("demo").innerHTML += "you clicked me! <br>" ;
+                }
+                function mythirdfunction(){
+                    document.getElementById("demo").innerHTML += " mouse out! <br>";
+                }
+
+           
+
+        </script>
+    </body>
+</html>

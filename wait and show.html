@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function waitandshow(){
+            var datesys=new Date();
+            document.getElementById("clock").innerHTML=datesys.toLocaleTimeString();
+            setInterval(waitandshow, 4000);
+
+        }
+    </script>
+    <h3>update time will show every 4 sec</h3>
+    <h3>the current time on your computer is: <br>
+    <span id="clock"></span></h3>
+    
+</body>
+</html>

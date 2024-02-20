@@ -1,0 +1,13 @@
+{
+  "name": "example",
+  "age": 25,
+  "city": "Sample City",
+  "data": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "someKey": "newValue"
+}

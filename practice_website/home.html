@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 5000px;
+      }
+      header {
+        position: sticky;
+        top: 1px;
+      }
+
+      .navbar {
+        background-color: rgb(21, 8, 8);
+        border: 2px solid black;
+        border-radius: 30px;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 5px 10px;
+        padding: 5px 0px;
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li a {
+        padding: 10px 10px;
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .navbar li a:hover {
+        color: blue;
+      }
+      .search {
+        float: right;
+        /* height: 30px; */
+        color: rgb(11, 15, 19);
+        /* width: 10px; */
+        padding: 5px 150px;
+        /* border-radius: 20px; */
+      }
+      .navbar input {
+        border: 2px solid rgb(7, 4, 4);
+        font-size: 16px;
+        border-radius: 40px;
+        width: 150px;
+      }
+      /* #btn1{ */
+        /* display: fixed;    "this is not working"
+        top: 10px;
+        bottom: 10px;
+        right: 10px; */
+        /* display: sticky;
+        top: 15px;
+
+      } */
+      #btn {
+        
+        background-color: red;
+        border: 2px solid red;
+        color: white;
+        border-radius: 12px;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <header>
+        <nav class="navbar" id="navigation">
+          <ul>
+            <li><a href="/contact">contact</a></li>
+            <li><a href="/services">services</a></li>
+            <li><a href="/navigation">navigation</a></li>
+            <!-- <li><a href="#">Contact us</a></li> -->
+            <div class="search">
+              <input
+                type="text"
+                class="search"
+                placeholder="Search the website"
+              />
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <div id="btn1">
+      <button id="btn">Navigation bar</button>
+      </div>
+    </div>
+
+    <script>
+      let navigation = document.getElementById("navigation");
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function showhide() {
+        if (navigation.style.display != "none") {
+          navigation.style.display = "none";
+          btn.innerHTML = "Show Navigation Bar";
+        } else {
+          navigation.style.display = "block";
+          btn.innerHTML = "Hide Navigation Bar";
+        }
+      });
+    </script>
+  </body>
+</html>

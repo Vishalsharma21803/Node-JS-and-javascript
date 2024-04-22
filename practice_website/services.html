@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is services</h1>
+    <script>
+    
+        var x=Number(prompt("Enter number of pens: "));
+        var y=Number(prompt("enter number of books: "));
+        function addition(a, b) {
+    try {
+        if (a === null || b === null || a.trim() === "" || b.trim() === "") {
+           throw new Error("Input is not given by the user");
+        } else {
+            document.write(Number(a) + Number(b));
+        }
+    } catch (e) {
+        document.write(e.message);
+    }
+}
+
+var a = prompt("Enter the value of a: ");
+var b = prompt("Enter the value of b:");
+addition(a, b);
+        
+    
+
+        
+    </script>
+    
+</body>
+</html>
